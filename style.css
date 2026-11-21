@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fff5f7, #ffe5ec, #fff0f3);
+    font-family: 'DM Sans', sans-serif;
+    color: #684653;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    background: rgba(255,255,255,0.85);
+    border: 1px solid #f8d5df;
+    border-radius: 25px;
+    padding: 38px 25px;
+    text-align: center;
+    box-shadow: 0 12px 35px rgba(180, 105, 130, 0.12);
+    animation: appear 0.6s ease;
+}
+
+@keyframes appear {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hearts {
+    color: #e58aa5;
+    font-size: 25px;
+    letter-spacing: 12px;
+    margin-bottom: 18px;
+}
+
+.small-text {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #bd8295;
+    margin-bottom: 15px;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #a94f70;
+}
+
+h1 {
+    font-size: clamp(30px, 7vw, 43px);
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.subtitle {
+    color: #98717e;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.envelope {
+    font-size: 65px;
+    margin: 20px 0;
+}
+
+button {
+    border: none;
+    background: #d982a0;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    margin: 8px 5px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #bd6485;
+    transform: translateY(-2px);
+}
+
+.secondary {
+    background: #f5e1e8;
+    color: #a65372;
+}
+
+.secondary:hover {
+    background: #edceda;
+}
+
+.footer {
+    font-size: 12px;
+    color: #bd8b9b;
+    margin-top: 25px;
+}
+
+.section-label {
+    color: #c17c94;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.content {
+    text-align: left;
+    line-height: 1.8;
+    margin: 25px 0;
+}
+
+.name-card, .manual-card, .award-card {
+    background: #fff4f7;
+    border: 1px solid #f5d9e2;
+    border-radius: 16px;
+    padding: 17px;
+    margin: 13px 0;
+}
+
+.name-card h3, .manual-card h3 {
+    color: #b45e7c;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.name-card p, .manual-card p {
+    color: #866472;
+    font-size: 14px;
+}
+
+.grand-finale {
+    background: #fce7ee;
+    border-radius: 18px;
+    padding: 25px 15px;
+    margin-top: 22px;
+    text-align: center;
+}
+
+.grand-finale h2 {
+    font-size: 36px;
+    letter-spacing: 3px;
+}
+
+.manual-card {
+    position: relative;
+}
+
+.manual-card p {
+    margin: 5px 0;
+}
+
+.award-card {
+    text-align: center;
+    padding: 23px 15px;
+}
+
+.award-icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.award-card h3 {
+    color: #a94f70;
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.award-card p {
+    color: #866472;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.letter {
+    background: #fff8fa;
+    border: 1px solid #f2dce4;
+    padding: 25px 20px;
+    border-radius: 15px;
+    text-align: left;
+    line-height: 1.9;
+    color: #795765;
+    font-size: 14px;
+}
+
+.letter p {
+    margin-bottom: 16px;
+}
+
+.cake {
+    font-size: 85px;
+    margin: 25px 0;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-9px); }
+}
+
+.final-message {
+    background: #fff1f5;
+    border-radius: 18px;
+    padding: 22px;
+    margin: 20px 0;
+    line-height: 1.8;
+}
+
+@media (max-width: 450px) {
+    .container {
+        padding: 30px 18px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+}
